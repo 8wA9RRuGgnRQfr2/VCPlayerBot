@@ -71,7 +71,7 @@ async def add_to_playlist(_, message: Message):
         admins = await get_admins(Config.CHAT)
         if Config.ADMIN_ONLY:
             if not (message.from_user is None and message.sender_chat or message.from_user.id in admins):
-                k=await message.reply_sticker("CAACAgQAAxkBAAM_YaSW2QTcTfbt4qEQKjXo5pu0T9EAAo0JAAIsgihRhtq9HKRKQVUiBA")
+                k=await message.reply_sticker("CAACAgIAAxkBAANmYjOGSHjWfMU6N_XjhKPGTWCsyrUAAvYXAAIHo6FJpE_AM_jxlf8jBA")
                 await delete_messages([message, k])
                 return
         type=""
